@@ -7,7 +7,7 @@ env
 
 .DS_Store
 
-tmp
+tmp/*
 sav
 out
 in
