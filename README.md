@@ -6,8 +6,10 @@ brew install huggingface-cli
 hf download unsloth/Qwen3.5-9B-GGUF Qwen3.5-9B-UD-Q4_K_XL.gguf --local-dir ~/Downloads
 
 ### run
-llama-server -m ~/Downloads/Qwen3.5-9B-UD-Q4_K_XL.gguf -c 8192 -ctk q8_0 -ctv q8_0 -fa on --jinja
+- max context for my MacBook
 llama-server -m ~/Downloads/Qwen3.5-9B-UD-Q4_K_XL.gguf -ngl 99 -c 16384 -ctk q8_0 -ctv q8_0 -fa on --jinja
+
+llama-server -m ~/Downloads/Qwen3.5-9B-UD-Q4_K_XL.gguf -ngl 99 -c 4096 -ctk q8_0 -ctv q8_0 -fa on --jinja
 
 
 ## llama.cpp in docker
